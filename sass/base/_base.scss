@@ -15,3 +15,25 @@ html {
 body {
   box-sizing: border-box;
 }
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: $color-grey-light-1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background-image: linear-gradient(to bottom, $color-primary-light, $color-primary-dark);
+  transition: all 0.2s ease-in-out;
+  border-radius: 3px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background-image: linear-gradient(to top, $color-primary-light, $color-primary-dark);
+}

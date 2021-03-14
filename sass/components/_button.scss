@@ -49,6 +49,15 @@
     }
   }
 
+  &--green {
+    background-image: linear-gradient(to bottom right, $color-primary, $color-primary-dark);
+    color: $color-white;
+
+    &:after {
+      background-color: $color-primary-light;
+    }
+  }
+
   &--animated {
     animation-name: moveInBottom;
     animation-duration: 0.5s;
